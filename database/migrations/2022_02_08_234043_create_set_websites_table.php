@@ -14,7 +14,11 @@ class CreateSetWebsitesTable extends Migration
     public function up()
     {
         Schema::create('set_websites', function (Blueprint $table) {
-            $table->id();
+            $table->uuid('id')->primary();
+            $table->string('nama');
+            $table->string('logo');
+            $table->string('no_telp');
+            $table->string('email');
             $table->timestamps();
         });
     }
