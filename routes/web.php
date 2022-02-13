@@ -26,4 +26,8 @@ Route::get('/admin', [App\Http\Controllers\Backend\Auth\AuthControllers::class, 
 Route::post('/admin', [App\Http\Controllers\Backend\Auth\AuthControllers::class, 'postLogin']);
 Route::get('/admin/logout', [App\Http\Controllers\Backend\Auth\AuthControllers::class, 'postLogout'])->name('adminlogout');
 
+// Route::get('/admin/dashboard', [App\Http\Controllers\Backend\DashboardController::class, 'index'])->name('admin.dashboard');
+Route::resource('/product', App\Http\Controllers\Backend\Product\ProductControllers::class);
+//testimonial
+Route::resource('/testimonial', App\Http\Controllers\Backend\Testimonial\TestimonialControllers::class);
 // Route::get('/')
