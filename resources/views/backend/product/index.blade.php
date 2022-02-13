@@ -27,7 +27,7 @@
             <!-- /.card -->
             <div class="card">
               <div class="card-header">
-                <a href="{{ route('artikel.create') }}" class="btn btn-sm btn-success">Tambah Data</a>
+                {{-- <a href="{{ route('artikel.create') }}" class="btn btn-sm btn-success">Tambah Data</a> --}}
               </div>
             </div>
             <div class="card">
@@ -138,7 +138,7 @@
       var table = $('.data-table').DataTable({
         processing: true,
         serverSide: true,
-        ajax: "{{ route('artikel.index') }}",
+        
         zerorows: 'Tidak Ada Data',
         //loading
         language: {

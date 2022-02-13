@@ -50,17 +50,17 @@
   </div> --}}
 
     <!-- Navbar -->
-    @include('admin.tools.navbar')
+    @include('backend.tools.navbar')
     <!-- /.navbar -->
 
     <!-- Main Sidebar Container -->
-    @include('admin.tools.sidebar')
+    @include('backend.tools.sidebar')
 
     @include('sweetalert::alert')
     <!-- Content Wrapper. Contains page content -->
     @yield('content')
     <!-- /.content-wrapper -->
-    @include('admin.tools.footer')
+    @include('backend.tools.footer')
 
     <!-- Control Sidebar -->
 

@@ -138,7 +138,7 @@
       var table = $('.data-table').DataTable({
         processing: true,
         serverSide: true,
-        ajax: "{{ route('artikel.index') }}",
+        ajax: "",
         zerorows: 'Tidak Ada Data',
         //loading
         language: {
